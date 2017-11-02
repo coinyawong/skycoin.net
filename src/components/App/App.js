@@ -16,7 +16,7 @@ import * as locales from 'locales';
 import Routes from '../Routes';
 import ScrollToTop from '../ScrollToTop';
 
-addLocaleData([...zh, ...ru, ...ko]);
+addLocaleData([...zh, ...ru, ...kr]);
 
 const theme = {
   colors: flatten(COLORS),
@@ -60,7 +60,7 @@ export default () => (
         <Switch>
           <Route path="/cn" render={props => <Root {...props} locale="zh" />} />
           <Route path="/ru" render={props => <Root {...props} locale="ru" />} />
-          <Route path="/kr" render={props => <Root {...props} locale="kr" />} />
+          <Route path="/kr" render={props => <Root {...props} locale="ko" />} />
           <Route path="/" render={props => <Root {...props} locale="en" />} />
         </Switch>
       </ScrollToTop>
